@@ -1,0 +1,159 @@
+*{ text-decoration: none;  /*quita el estilo x defecto*/
+}
+body {
+  /* display: flex;
+  flex-direction: column; */
+  background: linear-gradient(to right, rgb(147, 240, 170), rgb(255, 122, 122));
+}
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient( rgb(110, 207, 135),rgb(248, 248, 188), rgb(243, 140, 140));
+}
+#logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 120px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top:2px solid rgb(240, 217, 217);
+  box-shadow: 0 5px 10px rgb(206, 75, 75);
+}
+.home{
+  font-size: xx-large;
+  color: rgb(0, 255, 76);
+  align-self: center;
+}
+.producto{
+  font-size: xx-large;
+  color: rgb(214, 214, 65);
+  font-weight: bold;
+  align-self: center;
+}
+.contacto{
+  margin-right: 30px;
+  font-size: xx-large;
+  color: rgb(253, 0, 0);
+  align-self: center;
+}
+/*pseudo-clase :hover*/
+.home:hover {
+  transform: scale(2);
+  color: rgb(253, 0, 0);
+}
+.producto:hover{
+  transform: scale(2);
+  color: rgb(0, 255, 76);
+}
+.contacto:hover{
+  transform: scale(2);
+  color: rgb(214, 214, 65);
+}
+/*div contenedor de formulario*/
+.datos{
+  display: flex;
+  justify-content: center;
+}
+form {
+  flex-direction: column;
+  width: 350px;
+  height: 780px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 15px;
+  background-color:  rgb(118, 221, 118);
+  color: rgb(32, 86, 32);
+}
+input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  width: 320px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(255, 122, 122),rgb(147, 240, 170));
+}
+#consulta{
+  width: 320px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(255, 122, 122),rgb(147, 240, 170));
+}
+#enviar{
+  margin-top: 25px;
+  margin-left: 130px;
+  width: 70px;
+  height: 40px;
+  border: none;
+  background-color: rgb(64, 134, 88);
+  color: red;
+  border-radius: 15px;
+}
+#enviar:hover{
+  cursor: grab;
+  transform: scale(1.2);
+}
+label{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*datos del supermercado*/
+h2{
+  margin-left: 500px;
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(117, 12, 47);
+}
+.contactanos{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 15px;
+  color: rgb(117, 46, 46);
+  border-top: 5px solid green;
+  border-bottom: 5px solid green;
+}
+a{
+  color:rgb(117, 46, 46);
+}
+a:hover{
+  color:green;
+}
+.redes {      
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
+  cursor:crosshair;    /*cursor de forma cruz*/
+}
+.redes:hover{
+ transform:scale(1.5);
+}
+/*footer: datos de tarjetas*/
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /*fr: divide la pantalla en fracciones iguales */
+  justify-items: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background: linear-gradient( rgb(110, 207, 135),rgb(248, 248, 188), rgb(243, 140, 140));
+}
+#tarjeta {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+}
+ul>li {
+  list-style-type: none;   /*le quita el estilo que viene por defecto en las listas*/
+  color: rgb(11, 105, 58);
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Copyright*/
+.creador{
+  margin-left: 300px;
+  padding: 35px;
+  color: rgb(23, 133, 72);
+}

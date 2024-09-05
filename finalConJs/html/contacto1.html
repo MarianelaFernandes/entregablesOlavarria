@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Lisboa</title>
+    <link rel="stylesheet" href="../css/contacto1.css">
+</head>
+<body>
+    <header>
+        <img id="logo"  src="../img/logo.png" alt="imagen del super">
+        <a class="home" href="./portada1.html">Home</a>
+        <a class="producto" href="./producto1.html">Productos</a>
+        <a class="contacto" href="./contacto1.html">Contacto</a>
+    </header>
+<div class="datos">
+    <form>
+        <h1> Dejanos tu consulta</h1>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" placeholder="nombres" id="nombre" value="" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" placeholder="apellidos" id="apellido" value="" required>
+
+        <label for="nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" placeholder="fecha de nacimiento" id="nacimiento" max="31-12-9999" value="" required>
+
+        <label for="dni">DNI:</label>
+        <input type="number" placeholder="DNI" id="dni" maxlength="8" value="" required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="number" placeholder="telefono" max="10" id="telefono" value="" requerid>
+        
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" placeholder="domicilio" id="domicilio" value="" required>
+        
+        <label for="mail">Mail:</label>
+        <input type="email" placeholder="mail" id="mail" max="15" value="" required>
+        
+        <label for="consulta">Deje su reseña aquí:</label>
+        <textarea  type= "text" placeholder="consulta" rows="6" id= "consulta" required> </textarea> <!-- textarea: el usuario puede escribir un texto-->
+                                                                                                     <!--rows: cantidad de renglones -->
+        <button type="button" id="enviar">Enviar</button>
+    </form>
+</div>
+    <h2>¿Donde nos encontras?</h2>
+    <div class="contactanos">
+        <p>Santiago Cañizo 693 - Loma Negra-Olavarria  -  Tel. 02284-493029 - supermercadolisboa@gmail.com  -  
+            <a href= "../html/portada1.html"> www.supermercadolisboa.com</a></p>
+        <img src="../img/insta.png" alt="instagram" class="redes">
+        <img src="../img/face.png" alt="facebook" class="redes">
+        <img src="../img/tel.png" alt="telefono" class="redes">
+        <img src="../img/wsp.png" alt="whatsapp" class="redes">
+        <img src="../img/mail.png" alt="mail" class="redes">
+    </div>
+<footer>
+    <ul>
+        <li> Visa Debito/Credito</li>
+        <li> Mastercard</li>
+        <li> Maestro </li>
+        <li> Diners Club</li>
+        <li> Visa Electron</li>
+    </ul>
+    <img id="tarjeta" src="../img/pago.jpeg" alt="medios de pago">
+    <ul>
+        <li> Discover</li>
+        <li> American Express</li>
+        <li> WorldPay</li>
+        <li> Cirrus</li>
+        <li>Hasta 3 cuotas sin interes</li>
+    </ul>
+</footer>
+<p class="creador"> Copyright &copy; | 2024 | Supermercado LISBOA | Marianela & Daiana | Fernandes de Oliveira.</p>
+    <script src="../js/contacto1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</body>
+</html>
